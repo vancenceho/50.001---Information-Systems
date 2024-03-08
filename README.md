@@ -4,3 +4,5 @@ This repository contains solutions to problem sets from module _50.001 - Introdu
 
 ## License & Copyright
 © Vancence Ho 
+
+Licensed under the [**MIT License**](LICENSE.txt)
