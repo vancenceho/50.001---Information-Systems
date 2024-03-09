@@ -1,4 +1,4 @@
-package week1;
+package ProblemSets;
 import java.lang.Math;
 
 public class ProblemSet1X {
