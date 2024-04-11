@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-11T05:49:18.144Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="tUHHdKEaHs5GePXamS1_" version="24.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-11T06:00:29.168Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="FMgSN0rwJvoa-VhDN6MC" version="24.2.3" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="1036" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="596" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -29,7 +29,7 @@
           <mxGeometry y="80" width="220" height="72" as="geometry" />
         </mxCell>
         <mxCell id="n1yPlHlh6JEWoWV6ZDrB-10" value="DB_Operations" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="410" width="340" height="140" as="geometry" />
+          <mxGeometry x="330" y="410" width="340" height="160" as="geometry" />
         </mxCell>
         <mxCell id="n1yPlHlh6JEWoWV6ZDrB-11" value="- db : FirebaseFirestore" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="n1yPlHlh6JEWoWV6ZDrB-10" vertex="1">
           <mxGeometry y="26" width="340" height="26" as="geometry" />
@@ -37,8 +37,8 @@
         <mxCell id="n1yPlHlh6JEWoWV6ZDrB-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="n1yPlHlh6JEWoWV6ZDrB-10" vertex="1">
           <mxGeometry y="52" width="340" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="n1yPlHlh6JEWoWV6ZDrB-13" value="+ getTask(id): Task&lt;div&gt;+ addTask(title, description, status, deadline, priority)&lt;br&gt;&lt;div&gt;+ removeTask(id)&lt;/div&gt;&lt;div&gt;+ uipdateTask(id, title, description, status, deadline, priority)&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="n1yPlHlh6JEWoWV6ZDrB-10" vertex="1">
-          <mxGeometry y="60" width="340" height="80" as="geometry" />
+        <mxCell id="n1yPlHlh6JEWoWV6ZDrB-13" value="+ getTask(id): Task&lt;div&gt;+ addTask(Task)&lt;br&gt;&lt;div&gt;+ removeTask(id)&lt;/div&gt;&lt;div&gt;+ updateTask(Task)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ updateTaskStatus(id, status)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="n1yPlHlh6JEWoWV6ZDrB-10" vertex="1">
+          <mxGeometry y="60" width="340" height="100" as="geometry" />
         </mxCell>
         <mxCell id="n1yPlHlh6JEWoWV6ZDrB-15" value="TaskList" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="20" width="350" height="190" as="geometry" />
@@ -171,7 +171,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jEJspqg6cz47ItQOXjEV-20" value="TimeSlot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="1270" width="160" height="190" as="geometry" />
+          <mxGeometry x="720" y="1270" width="160" height="190" as="geometry">
+            <mxRectangle x="720" y="1270" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="jEJspqg6cz47ItQOXjEV-21" value="- startTime : String&lt;div&gt;- endTime : String&lt;/div&gt;&lt;div&gt;- duration : long&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="jEJspqg6cz47ItQOXjEV-20">
           <mxGeometry y="26" width="160" height="54" as="geometry" />
